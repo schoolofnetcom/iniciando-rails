@@ -1,0 +1,19 @@
+<h1>Listing People</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @people.each do |p| %>
+            <tr>
+                <td> <%= p.name %></td>
+                <td> <%= p.age %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

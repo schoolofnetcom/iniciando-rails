@@ -1,0 +1,15 @@
+<%= form_for @person, :url => { :action => "create" } do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+
+    <br>
+
+    <%= f.submit %>
+
+    <br>
+
+    <%= link_to("Back to list", :controller => "person", :action => "index") %>
+<% end %>
